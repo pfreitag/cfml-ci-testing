@@ -28,5 +28,7 @@ jobs:
         run: |
           ls /opt/coldfusion/
           ls /opt/coldfusion/cfusion/
-          ls /opt/coldfusion/bin/
+          ls /opt/coldfusion/cfusion/bin/
+          
+          /opt/coldfusion/cfusion/bin/cfcompile.sh -webroot $GITHUB_WORKSPACE
           
