@@ -30,5 +30,7 @@ jobs:
           ls /opt/coldfusion/cfusion/
           ls /opt/coldfusion/cfusion/bin/
           
-          /opt/coldfusion/cfusion/bin/cfcompile.sh -webroot $GITHUB_WORKSPACE
+          ps -aux
+          
+          /opt/coldfusion/cfusion/bin/cfcompile.sh -cfruntimeuser root -webroot $GITHUB_WORKSPACE -dir $GITHUB_WORKSPACE
           
